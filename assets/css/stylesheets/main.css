@@ -1,0 +1,24 @@
+.navbar-inverse {
+  opacity: 0.9
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../img/back-to-the-future-o.gif);
+  background-size: cover;
+/*  -webkit-filter: invert(1);
+*/}
+
+.quote {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+
+.content {
+  padding-top: 50px;
+  height: 500px;
+}
