@@ -12,53 +12,58 @@
   <title></title>
 </head>
 <body>
-  <nav id="my-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav id="my-navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-      <ul class="nav navbar-nav">
-        <li>
-          <a class="navbar-brand" href="#home">Corbin Elliott</a>
-        </li>
-        <li>
-          <a href="#bio">Bio</a>
-        </li>
-        <li>
-          <a href="#work">Work</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-        <li>
-          <a href="#blog">Blog</a>
-        </li>
-      </ul>
-      <ul class=" nav navbar-nav navbar-right">
-        <li>
-          <a href="http://twitter.com/Corbin_Elliott">
-            <span><i class="fa fa-twitter"></i></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://facebook.com">
-            <span><i class="fa fa-facebook"></i></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://instagram.com/Corbin_Elliott">
-            <span><i class="fa fa-instagram"></i></span>
-          </a>
-        </li>
-        <li>
-          <a href="http://linkedin.com">
-            <span><i class="fa fa-linkedin"></i></span>
-          </a>
-        </li>
-      </ul>
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#nav-links">
+          <span><i class="fa fa-bars"></i></span>
+        </button>
+        <a class="navbar-brand" href="#home">Corbin Elliott</a>
+      </div>
+      <div id="nav-links" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="#bio">About Me</a>
+          </li>
+          <li>
+            <a href="#work">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="http://twitter.com/Corbin_Elliott">
+              <span><i class="fa fa-twitter"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://facebook.com">
+              <span><i class="fa fa-facebook"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://instagram.com/Corbin_Elliott">
+              <span><i class="fa fa-instagram"></i></span>
+            </a>
+          </li>
+          <li>
+            <a href="http://linkedin.com">
+              <span><i class="fa fa-linkedin"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
   <div class="row" id="home">
     <div class="col-xs-12 splash" data-stellar-background-ratio="0.0">
-      <div class="quote animated bounce" data-stellar-ratio="0.5">
+      <div class="quote animated bounce">
         <h1>"Roads? Where we're going, we don't need <em>roads</em>."</h1>
         <h2>~Doc Brown</h2>
       </div>
@@ -66,9 +71,45 @@
   </div>
 
   <div class="row" id="bio">
-    <div class="container">
-      <div class="col-lg-12">
-        <h1 class="content">Bio</h1>
+    <div class="col-xs-12">
+      <div class="container">
+        <h1>About Me</h1>
+        <div id="bio-carousel" class="carousel slide visible-lg" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#bio-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bio-carousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <div id="me" class="full-rect"></div>
+              <div id="salutations" class="sm-rect"></div>
+              <div id="an-aspiring" class="lrg-square"></div>
+              <div id="technologies" class="lrg-rect"></div>
+              <div id="twitter" class="sm-square"></div>
+              <div id="wdi" class="sm-rect"></div>
+            </div>
+            <div class="item">
+              <div id="me-too" class="full-rect"></div>
+              <div id="interests" class="lrg-rect"></div>
+              <div id="linked-in" class="sm-square"></div>
+              <div id="method" class="lrg-square"></div>
+              <div id="bugs-joke" class="lrg-square"></div>
+              <div id="osu" class="sm-rect"></div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#bio-carousel" data-slide="prev">
+            <span><i class="fa fa-chevron-left fa-5x"></i></span>
+          </a>
+          <a class="right carousel-control" href="#bio-carousel" data-slide="next">
+            <span><i class="fa fa-chevron-right fa-5x"></i></span>
+          </a>
+        </div>
+        <!-- <div id="bio-rectangles">
+          <div id="one" class="md-rect"></div>
+          <div id="two" class="md-rect"></div>
+          <div id="three" class="md-rect"></div>
+          <div id="four" class="md-rect"></div>
+        <div> -->
       </div>
     </div>
   </div>

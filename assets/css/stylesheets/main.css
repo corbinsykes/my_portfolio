@@ -1,3 +1,7 @@
+.navbar {
+  border-bottom: 5px solid rgba(0,0,0,0.12);
+}
+
 .navbar-inverse {
   opacity: 0.9
 }
@@ -5,10 +9,10 @@
 .splash {
   height: 100%;
   width: 100%;
-  background-image: url(../../img/back-to-the-future-o.gif);
+  background-image: url(../../img/cuban_car.jpg);
   background-size: cover;
-/*  -webkit-filter: invert(1);
-*/}
+  -webkit-filter: grayscale(0.5);
+}
 
 .quote {
   position: relative;
@@ -21,4 +25,142 @@
 .content {
   padding-top: 50px;
   height: 500px;
+}
+
+.carousel-control.right {
+  padding-left: 99px;
+  padding-top: 170px;
+  background-image: none;
+}
+
+.carousel-control.left {
+  padding-right: 170px;
+  padding-top: 170px;
+  background-image: none;
+}
+
+.full-rect {
+  height: 568px;
+  width: 284px;
+  float: left;
+}
+
+.lrg-rect {
+  height: 426px;
+  width: 284px;
+  float: left;
+}
+
+.sm-rect {
+  height: 142px;
+  width: 284px;
+  float: left;
+}
+
+.lrg-square {
+  height: 284px;
+  width: 284px;
+  float: left;
+}
+
+.sm-square {
+  height: 142px;
+  width: 142px;
+  float: left;
+}
+
+#me {
+  background-image: url(../../img/bowtie.jpg);
+  background-position: 90% 0;
+}
+
+#salutations {
+  position: relative;
+  top: 142px;
+  background-color: #e74c2e;
+}
+
+#an-aspiring {
+  position: relative;
+  top: 284px;
+  right: 284px;
+  background-color: #3078c0;
+}
+
+#technologies {
+  position: relative;
+  right: 284px;
+  background-color: #131426;
+}
+
+#twitter {
+  position: relative;
+  left: 710px;
+  bottom: 284px;
+  background-color: #b31b28;
+}
+
+#wdi {
+  position: relative;
+  left: 426px;
+  bottom: 142px;
+  background-color: #f2c230;
+}
+
+#me-too {
+  background-image: url(../../img/ice_cream.jpg);
+  background-size: cover;
+  background-position: -240px;
+}
+
+#interests {
+  background-color: #3078c0;
+}
+
+#linked-in {
+  position: relative;
+  top: 426px;
+  right: 142px;
+  background-color: #e74c2e;
+}
+
+#method {
+  position: relative;
+  right: 142px;
+  top: 142px;
+  background-color: #131426;
+}
+
+#bugs-joke {
+  background-color: #f2c230;
+  position: relative;
+  left: 284px;
+  bottom: 284px;
+}
+
+#bio-rectangles {
+  position: relative;
+  left: 25%;
+}
+
+.md-rect {
+  height: 300px;
+  width: 150px;
+  float: left;
+}
+
+#one {
+  background-color: #3078c0;
+}
+
+#two {
+background-color: #e74c2e;
+}
+
+#three {
+background-color: #131426;
+}
+
+#four {
+  background-color: #f2c230;
 }
