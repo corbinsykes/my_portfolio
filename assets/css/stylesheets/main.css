@@ -1,25 +1,96 @@
-.navbar {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #131426;
+  text-align: center;
+}
+
+#work {
+  background-color: #fff;
+  height: 875px;
+}
+
+#bio {
+  padding-top: 50px;
+  height: 875px;
+}
+
+#bio h1 {
+  text-align: left;
+  font-weight: 100;
+  color: #fff;
+}
+
+.stick {
+  position: fixed;
+  top: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../img/bowtie.jpg);
+  background-position-x: 90%;
+  background-position-y: -30;
+}
+
+#intro {
+  padding-top: 10%;
+  background-color: transparent;
+}
+
+.name {
+  color: #fff;
+}
+
+.navbar-brand {
+  font-family: 'Rock Salt', cursive;
+}
+
+.navbar-splash {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-main {
+  background-color: #fff;
   border-bottom: 5px solid rgba(0,0,0,0.12);
 }
 
-.navbar-inverse {
-  opacity: 0.9
+.navbar-main .navbar-brand {
+  color: #ccc;
 }
 
+.navbar-main .navbar-nav > li > a {
+  color: #ccc;
+  font-weight: 200;
+}
+
+.navbar-main .navbar-nav > li > a:hover,
+.navbar-main .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #2fbfbf;
+  font-weight: 200;
+}
+
+#nav-links {
+  padding-right: 50px;
+}
+
+
 .splash {
-  height: 100%;
+  height: 875px;
   width: 100%;
   background-image: url(../../img/cuban_car.jpg);
   background-size: cover;
-  -webkit-filter: grayscale(0.5);
-}
-
-.quote {
-  position: relative;
-  top: 40%;
-  text-align: center;
-  color: #fff;
-  text-shadow: 2px 2px #000;
 }
 
 .content {
@@ -70,8 +141,7 @@
 }
 
 #me {
-  background-image: url(../../img/bowtie.jpg);
-  background-position: 90% 0;
+  background-color: #2fbfbf;
 }
 
 #salutations {
@@ -90,7 +160,7 @@
 #technologies {
   position: relative;
   right: 284px;
-  background-color: #131426;
+  background-color: #203880;
 }
 
 #twitter {
@@ -108,7 +178,7 @@
 }
 
 #me-too {
-  background-image: url(../../img/ice_cream.jpg);
+  background-color: #2fbfbf;
   background-size: cover;
   background-position: -240px;
 }
@@ -128,7 +198,7 @@
   position: relative;
   right: 142px;
   top: 142px;
-  background-color: #131426;
+  background-color: #203880;
 }
 
 #bugs-joke {
@@ -158,7 +228,7 @@ background-color: #e74c2e;
 }
 
 #three {
-background-color: #131426;
+background-color: #203880;
 }
 
 #four {

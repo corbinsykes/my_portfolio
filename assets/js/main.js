@@ -3,19 +3,31 @@ $(document).ready(function() {
   $(window).stellar();
 
   // defining the bottom of the top section
-  var mainbottom = $('#home').offset().top + $('#home').height();
+  var mainbottom = $('#home').offset().top + $('#home').height() - 50;
+
   // on scroll,
   $(window).on('scroll',function(){
     // we round here to reduce a little workload
     stop = Math.round($(window).scrollTop());
     if (stop > mainbottom) {
-        $('.navbar').removeClass('navbar-inverse');
-        $('.navbar').addClass('navbar-default');
+        $('.navbar').removeClass('navbar-splash');
+        $('.navbar').addClass('navbar-main');
     } else {
-        $('.navbar').removeClass('navbar-default');
-        $('.navbar').addClass('navbar-inverse');
+        $('.navbar').removeClass('navbar-main');
+        $('.navbar').addClass('navbar-splash');
     }
   });
+
+  // var s = $("#work");
+  // var pos = s.position();
+  // $(window).scroll(function() {
+  //   var windowpos = $(window).scrollTop();
+  //   if (windowpos >= pos.top) {
+  //       s.addClass("stick");
+  //   } else {
+  //       s.removeClass("stick");
+  //   }
+  // });
 
   $(function() {
     $('a[href*=#]:not([href=#bio-carousel])').click(function() {
@@ -31,6 +43,4 @@ $(document).ready(function() {
       }
     });
   });
-
-
 });
